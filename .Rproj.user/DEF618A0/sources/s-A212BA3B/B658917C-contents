@@ -1,13 +1,35 @@
 ---
-title: "chapter3"
+title: '20200325'
 author: "tr"
-date: "2020/3/18"
+date: "2020/3/25"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+```{r}
+factor(
+  字串向量
+)
+```
+
+```{r}
+c("小名",5)
+```
+
+```{r}
+# 10位學生的主系
+majors10_char <- factor(
+  c('經濟學系','社會學系','社會學系','經濟學系','經濟學系','社會學系','經濟學系','經濟學系','經濟學系','社會學系'))
+
+typeof(majors10_char)
+class(majors10_char)
+```
+```{r}
+levels(majors10_char)
+```
+
 
 ## R Markdown
 
