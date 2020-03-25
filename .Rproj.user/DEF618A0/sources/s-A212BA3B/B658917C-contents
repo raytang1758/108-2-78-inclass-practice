@@ -29,7 +29,28 @@ class(majors10_char)
 ```{r}
 levels(majors10_char)
 ```
+```{r}
+stringInteger <- c(1,2,-11)
+class(stringInteger) # 無法進行數值運算
+stringInteger+2
+```
+```{r}
+stringInteger <- c("1","2","-11")
+class(stringInteger) # 無法進行數值運算
+as.numeric(stringInteger)+2
+```
+```{r}
+studentId <- c(410773002, 410773015)
+as.character(studentId)
+```
+```{r}
+studentId <- c(410773002, 410773015)
+studentId=as.character(studentId)
+class(studentId)
+```
+```{r}
 
+```
 
 ## R Markdown
 
@@ -41,6 +62,11 @@ When you click the **Knit** button a document will be generated that includes bo
 summary(cars)
 ```
 
+
+
+stringInteger <- c("1","2","-11")
+class(stringInteger) # 無法進行數值運算
+stringInteger+2
 ## Including Plots
 
 You can also embed plots, for example:
