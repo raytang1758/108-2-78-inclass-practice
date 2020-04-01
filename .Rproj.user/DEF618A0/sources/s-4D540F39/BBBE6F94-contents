@@ -4,57 +4,46 @@ author: "tr"
 date: "2020/4/1"
 output: html_document
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 ```{r}
-
-class(c (141, 121)
+socialmedia <- list(list('fbi',"cia",1,'fbi',"cia"), 
+                    c('us','ta','ts')
+  
 )
-
-```
-```{r}
-my_108_total_credits <- 15
-total_credits <- 15
-total_credits <- 15
-my_108_total_credits <- 15
-my.108.total_credits <- 15
-.www<_my_108_total_credits <- 15
-_108_total_credits <- 15
-108_total_credits <- 15
-_my_108_total_credits <- 15
-my.108.total_credits <- 15
-.108.total_credits <- 15 # 隱藏變數
-.my.108.total_credits <- 15
-我的108學年總學分數 <- 15
-`我的108學年總學分數` <- 15 # 特殊名稱處理，`不是名稱的一部份
-`.108.total_credits` <- 15
-.m
-.my.108.total_credits <- 15
-我的108學年總學分數 <- 15
-`我的108學年總學分數` <- 15 # 特殊名稱處理，`不是名稱的一部份
-`.108.total_credits` <- 15
+str(socialmedia)
+print(socialmedia)
 ```
 
 ```{r}
-dialogue <- c('小明說："明天不用上課。"',
-               '小花說："真的嗎？"')
-
-
+C(1,5)
 ```
 
-
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r}
+`小明交易1` <- list(
+  ymd_hms("2020-03-31T13:40:55Z"), # Date/Time class
+  "一芳", # character
+  2, # numeric
+  "水果茶" # character
+)
+str(`小明交易1`)
 ```
+
+```{r}
+# list含兩個lists, 子層list又各含兩個vectors
+`小明108學年課表C` <- list(
+  `108學年第1學期`=
+    list(
+    c("108-1"), # 可只寫 "108-1"
+    c("高級會計學","高等統計學")
+       ),
+  `108學年第2學期`=
+    list(
+    c("108-2"),
+    c("食在拉丁美洲")
+  )
+)
+print(`小明108學年課表C`)
+```
+
 
 ## Including Plots
 
