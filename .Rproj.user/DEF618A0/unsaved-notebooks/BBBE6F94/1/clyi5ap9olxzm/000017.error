@@ -1,0 +1,1 @@
+{"frames":[],"message":"錯誤: Incomplete expression: a <- list(\n              `first semester` = list(\n                course1 <- list(name=\"marcoenconmy\",teacher=\"alice\",score=\"95\"),\n                course2 <- list(name=\"mecro\",techer= \"aa\",score=\"64\"))\n"}

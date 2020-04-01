@@ -37,20 +37,81 @@ str(`小明交易1`)
        ),
   `108學年第2學期`=
     list(
-    c("108-2"),
-    c("食在拉丁美洲")
+    list("108-2"),
+    list("食在拉丁美洲")
   )
 )
 print(`小明108學年課表C`)
 ```
 
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+# git hub
+```{r}
+commit <- list(
+  author = list("Martin老師"," mtlin@gm.ntpu.edu.tw",
+  commiter = list('emily007@gmail.com'),
+  message = list('update')
+)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+commit <- list(
+  author = c("Martin老師", "mtlin@gm.ntpu.edu.tw", "2020-03-25T07:17:40Z"),
+  committer = c("emilyluckey", "emily007@gmail.com", "2020-03-26T08:18:40Z"),
+  message = c("update")
+)
+print(commit)
+```
+
+
+
+```{r}
+ccommit <- list(
+  author=list(
+              name='mk',
+              gender='m',
+                nuber=list('4'))
+print(ccommit)
+```
+
+```{r}
+browseURL("https://api.github.com/repos/tpemartin/108-2-56-inclass-practice/commits") 
+```
+
+```{r}
+library(jsonlite) # 不少同學這行會有Error，還記得如何排除嗎？
+toJSON(commit)
+```
+              
+              
+              
+              \that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+a <- list(
+              `first semester` = list(
+                course1 <- list(name="marcoenconmy",teacher="alice",score="95"),
+                course2 <- list(name="mecro",techer= "aa",score="64"))
+```
+
+```{r}
+              `first semester` = list(
+                course1 <- list(name="marcoenconmy",teacher="alice",score="95"),
+                course2 <- list(name="mecro",techer= "aa",score="64"))
+print(`first semester`)
+```
+
+
+```{r}
+ha <-
+list(
+              `first semester` = list(
+                course1 <- list(name="marcoenconmy",teacher="alice",score="95"),
+                course2 <- list(name="mecro",techer= "aa",score="64")))
+print(ha)
+```
+```
+
+```
+```
+

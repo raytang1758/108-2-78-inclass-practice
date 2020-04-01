@@ -1,0 +1,9 @@
+"0","ccommit <- list("
+"0","  author=list("
+"0","              name='mk',"
+"0","              gender='m,"
+"0","                nuber=list('4'))"
+"2","錯誤: unexpected numeric constant in:
+""              gender='m,
+                nuber=list('4""
+"

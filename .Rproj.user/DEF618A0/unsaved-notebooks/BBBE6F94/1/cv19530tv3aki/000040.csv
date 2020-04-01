@@ -1,0 +1,11 @@
+"0","commit <- list("
+"0","  author = list(""Martin老師"","" mtlin@gm.ntpu.edu.tw),"
+"0","  commiter = list('emily007@gmail.com'),"
+"0","  message = list('update')"
+"0",")"
+"2","錯誤: Incomplete expression: commit <- list(
+  author = list(""Martin?葦"","" mtlin@gm.ntpu.edu.tw),
+  commiter = list('emily007@gmail.com'),
+  message = list('update')
+)
+"

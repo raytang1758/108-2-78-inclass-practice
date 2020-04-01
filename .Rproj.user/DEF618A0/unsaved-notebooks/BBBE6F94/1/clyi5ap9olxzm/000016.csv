@@ -1,0 +1,9 @@
+"0","a <- list("
+"0","              `first semester` = list("
+"0","                course1 <- list(name=""marcoenconmy"",teacher=""alice"",score=""95""),"
+"0","                course2 <- list(name=""mecro"",techer= ""aa"",score=""64""))"
+"2","錯誤: Incomplete expression: a <- list(
+              `first semester` = list(
+                course1 <- list(name=""marcoenconmy"",teacher=""alice"",score=""95""),
+                course2 <- list(name=""mecro"",techer= ""aa"",score=""64""))
+"
