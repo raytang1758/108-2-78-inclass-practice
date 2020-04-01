@@ -68,9 +68,10 @@ print(commit)
 ```{r}
 ccommit <- list(
   author=list(
+date = c(12),
               name='mk',
               gender='m',
-                nuber=list('4'))
+                number='4'))
 print(ccommit)
 ```
 
@@ -110,8 +111,37 @@ list(
                 course2 <- list(name="mecro",techer= "aa",score="64")))
 print(ha)
 ```
+```{r}
+library(jsonlite) # 不少同學這行會有Error，還記得如何排除嗎？
+toJSON(commit)
 ```
 
+```{r}
+'今明天氣' <- list(
+       date = c('2020-03-31','2020-04-01'),
+       `台北市`=list(  `溫度`=list(hot=c(25),low=c(18)  )  ),
+       `新北市`=list(  `溫度`=list(hot=c(24),low=c(15)  )  )
+       )
+print(今明天氣)
 ```
+
+
+
+
+
+'今明天氣' <- list(
+       date = c('今（“2020-03-31”）','明（“2020-04-01”）'),
+       `台北市`=list(
+       temperature=list(  hot=c(25),low=c(18)
+       ),
+
+       
+       `新北市`=list(
+         temperature=list(  hot=c(24),low=c(15)
+       )
+)
+```
+temperature=list(  hot=c(25),low=c(18)
+
 ```
 
