@@ -1,0 +1,173 @@
+---
+title: '20200401'
+author: "tr"
+date: "2020/4/1"
+output: html_document
+---
+```{r}
+socialmedia <- list(list('fbi',"cia",1,'fbi',"cia"), 
+                    c('us','ta','ts')
+  
+)
+str(socialmedia)
+print(socialmedia)
+```
+
+```{r}
+C(1,5)
+```
+
+```{r}
+`小明交易1` <- list(
+  ymd_hms("2020-03-31T13:40:55Z"), # Date/Time class
+  "一芳", # character
+  2, # numeric
+  "水果茶" # character
+)
+str(`小明交易1`)
+```
+
+```{r}
+# list含兩個lists, 子層list又各含兩個vectors
+`小明108學年課表C` <- list(
+  `108學年第1學期`=
+    list(
+    c("108-1"), # 可只寫 "108-1"
+    c("高級會計學","高等統計學")
+       ),
+  `108學年第2學期`=
+    list(
+    list("108-2"),
+    list("食在拉丁美洲")
+  )
+)
+print(`小明108學年課表C`)
+```
+
+
+# git hub
+```{r}
+commit <- list(
+  author = list("Martin老師"," mtlin@gm.ntpu.edu.tw",
+  commiter = list('emily007@gmail.com'),
+  message = list('update')
+)
+```
+
+```{r}
+commit <- list(
+  author = c("Martin老師", "mtlin@gm.ntpu.edu.tw", "2020-03-25T07:17:40Z"),
+  committer = c("emilyluckey", "emily007@gmail.com", "2020-03-26T08:18:40Z"),
+  message = c("update")
+)
+print(commit)
+```
+
+
+
+```{r}
+ccommit <- list(
+  author=list(
+date = c(12),
+              name='mk',
+              gender='m',
+                number='4'))
+print(ccommit)
+```
+
+```{r}
+browseURL("https://api.github.com/repos/tpemartin/108-2-56-inclass-practice/commits") 
+```
+
+```{r}
+library(jsonlite) # 不少同學這行會有Error，還記得如何排除嗎？
+toJSON(commit)
+```
+              
+              
+              
+              \that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+a <- list(
+              `first semester` = list(
+                course1 <- list(name="marcoenconmy",teacher="alice",score="95"),
+                course2 <- list(name="mecro",techer= "aa",score="64"))
+```
+
+```{r}
+              `first semester` = list(
+                course1 <- list(name="marcoenconmy",teacher="alice",score="95"),
+                course2 <- list(name="mecro",techer= "aa",score="64"))
+print(`first semester`)
+```
+
+
+```{r}
+ha <-
+list(
+              `first semester` = list(
+                course1 <- list(name="marcoenconmy",teacher="alice",score="95"),
+                course2 <- list(name="mecro",techer= "aa",score="64")))
+print(ha)
+```
+```{r}
+library(jsonlite) # 不少同學這行會有Error，還記得如何排除嗎？
+toJSON(commit)
+```
+
+```{r}
+'今明天氣' <- list(
+       date = c('2020-03-31','2020-04-01'),
+       `台北市`=list(  `溫度`=list(hot=c(25),low=c(18)  )  ),
+       `新北市`=list(  `溫度`=list(hot=c(24),low=c(15)  )  )
+       )
+print(今明天氣)
+```
+
+
+
+
+
+'今明天氣' <- list(
+       date = c('今（“2020-03-31”）','明（“2020-04-01”）'),
+       `台北市`=list(
+       temperature=list(  hot=c(25),low=c(18)
+       ),
+
+       
+       `新北市`=list(
+         temperature=list(  hot=c(24),low=c(15)
+       )
+)
+```
+temperature=list(  hot=c(25),low=c(18)
+
+```
+
+```{r}
+library(lubridate)
+```
+```{r}
+browseURL("https://docs.google.com/spreadsheets/d/1EAG49qDKPWWi0ebkVr29TLrvVnoBPfkvxYY-J3xLAHY/edit#gid=458686645")
+```
+```{r}
+`tr`= list(  totalCommits=c(3),   firstCommit=c(2020-03-11 14:16:43,))
+```
+
+```{r}
+library(lubridate)
+tp<- ymd_hms("2020-03-18 13:52:40",
+        tz="UTC")
+la      <- mdy_hms("Mar.18, 2020, 05:52:40",tz="UTC")
+print(tp)
+print(la)
+```
+
+
+```{r}
+with_tz(tp,tzone = "UTC")
+print(tp)
+```
+
+
