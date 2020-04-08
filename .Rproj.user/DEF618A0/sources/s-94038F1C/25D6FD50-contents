@@ -20,6 +20,12 @@ vectorexample[[1]]
 library(jsonlite)
 fromJSON("https://data.tainan.gov.tw/dataset/4cd9345a-04bf-4328-a97d-314ff78b4763/resource/afc025fc-1ef4-447c-b785-a680391d0ca1/download/tnsport2.json", simplifyDataFrame = F) -> tainanSportsMap
 ```
+```{r}
+str(tainanSportsMx.level = 1)
+str(tainanSportsMap[c(
+  
+)])
+```
 
  
 
@@ -44,8 +50,9 @@ listExample <-
       )
     )
   )
-listExample[c(1,2),]
-
+str(listExample,max.level = 1)
+listExample[c(2,1)]
+listExample[c('學期','student')]
 ```
 
 ```{r}
@@ -59,6 +66,9 @@ str()
 
 
 ```
+```{r}
+fromJSON("https://www.dropbox.com/s/qnm9bnz7vccrvcz/taipeiNightMarkets.json?dl=1", simplifyDataFrame = F) -> taipeiNightMarkets
+```
 
 
 
@@ -68,6 +78,6 @@ str()
 ```
 
 ```{r}
-browser(https://drive.google.com/file/d/1gdR0027DoqSn2V4OBDPC7Hm0PD-fsXZk/view)
+fromJSON("https://www.dropbox.com/s/qnm9bnz7vccrvcz/taipeiNightMarkets.json?dl=1", simplifyDataFrame = F) -> taipeiNightMarkets
 ```
 

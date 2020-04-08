@@ -1,0 +1,1 @@
+{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"str(tainanSportsMx.level = 1)","line_number":0},{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"str.default(tainanSportsMx.level = 1)","line_number":0}],"message":"Error in str.default(tainanSportsMx.level = 1) : \n  缺少引數 \"object\"，也沒有預設值\n"}
