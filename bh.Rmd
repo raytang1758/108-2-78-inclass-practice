@@ -20,8 +20,8 @@ library(jsonlite) # 不少同學這行會有Error，還記得如何排除嗎？
 toJSON(commit)
 ```
 ```{r}
-fromJSON("http://data.ntpc.gov.tw/api/v1/rest/datastore/382000000A-000157-002",
-         simplifyDataFrame = F) -> newTaipeiCityVaccine
+fromJSON("https://data.gov.tw/dataset/26722",
+         simplifyDataFrame = F) -> newTaipe
 ```
 ```{r}
 fromJSON("https://www.dropbox.com/s/qnm9bnz7vccrvcz/taipeiNightMarkets.json?dl=1", simplifyDataFrame = F) -> taipeiNightMarkets

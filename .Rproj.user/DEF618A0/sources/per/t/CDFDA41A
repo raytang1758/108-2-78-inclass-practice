@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586348723377.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3774292837",
+    "id" : "CDFDA41A",
+    "lastKnownWriteTime" : 1586351244,
+    "last_content_update" : 1586351244715,
+    "path" : "C:/Users/ray/Desktop/108-2-hw1-3 (1).R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "13,22",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

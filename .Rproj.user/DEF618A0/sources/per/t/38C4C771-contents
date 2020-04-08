@@ -3,7 +3,7 @@ title: "homework 1"
 output: html_document
 params:
   studentName: "湯瑞中"
-  studentID: "410772052"
+  studentID: "ˋ410772052"
 ---
 
 # 注意事項
@@ -33,8 +33,7 @@ library(lubridate); library(jsonlite); library(readr)
   * 如何收取作業通知內容及作業檔下  
   * 如何交作業和重新繳交作業  
   * 作業/考試Rmd檔寫作規範  
-並完成[Google表單測驗題]出現以下訊息需要執行什麼指令：
-"Error in library(lubridate) : there is no package called ‘lubridate’")
+並完成[Google表單測驗題](https://forms.gle/KGcnWeVFE3w6mkU56)
 
 ## 2 Date/Time
 
@@ -42,7 +41,7 @@ library(lubridate); library(jsonlite); library(readr)
 "Error in library(lubridate) : there is no package called ‘lubridate’"
 
 ```{r ans21c}
-
+install.packages(c("lubridate"))
 ```
 
 ### 2.2
@@ -50,18 +49,28 @@ library(lubridate); library(jsonlite); library(readr)
 ```{r data22}
 taiwan_time <- "西元2019年4月12日 12點55分30秒"
 oslo_time <- "18.11.2018 15:33:02"
+
 ```
 
 其中taiwan_time為台灣時間，oslo_time為挪威Oslo時間。請將兩個時間存在一個atomic vector叫two_times的物件裡，且為Date/Time class（即POSIXct POSIXt class）。
 
 ```{r ans22}
-# two_times
+  taiwan_time<- c("2019-04-12 12:55:30")
+  oslo_time <- c("2018-11-18 15:33:02")
+taiwan_time <- ymd_hms(taiwan_time,tz="Asia/Taipei")
+oslo_time <- ymd_hms("2018-11-18 15:33:02" , tz="Europe/Oslo")
+'two_times' <- c(taiwan_time,oslo_time  )
+
+ two_times
 ```
 
 ### 2.3
 將two_times改成美國Chicago時間顯示的two_times_chicago：
 
 ```{r ans23}
+with_tz(two_times, tzone="US/Central")
+two_times -> two_times_chicago
+
 # two_times_chicago
 ```
 
@@ -86,7 +95,19 @@ List of 2
 其中approve（核準狀況，logics class），course_info(課程資訊), coursename(課名), type（類別，必/選/通）, credits（學分數, numeric class）, time_place（上課時地）, weekday（星期）, time_slots（節次, numeric class）, classroom（教室）的意思如（）內容所示。
 
 ```{r ans31}
-# course
+course <- list(
+   `approve`= c(TRUE),
+    course_info= list(
+      coursename= c("會計學"),
+      type     = c("必"),
+      credits   = c(3),
+      time_place=list(
+                     `weekday`   =c("星期三"),
+                     `time_slots`=c(7,8,9),
+                     `classroom` =c("商2F05")   )
+  )
+)
+course
 ```
 
 ### 3.2
@@ -98,7 +119,21 @@ List of 2
 你要怎麼修改你的course物件內容讓裡頭的time_slots可以有兩個時段及地點，答案物件為courseUpdate。courseUpdate內容只有time_place與course不同，其餘元素值維持與course相同內容。
 
 ```{r ans32}
-# courseUpdate
+courseUpdate <- list(
+   `approve`= c(TRUE),
+    course_info= list(
+      coursename= c("會計學"),
+      type     = c("必"),
+      credits   = c(3),
+      time_place=list(
+                     `weekday`   =c("星期三"),
+                     `time_slots`=list(
+                                       `星期三`=c(7,8),
+                                      `星期二`=c(5)),
+                     `classroom` =c("商2F05")   )
+  )
+)
+courseUpdate
 ```
 
 ### 3.3
@@ -126,7 +161,19 @@ List of 2
 
 可用str(accidents)來檢查你的答案是否有符合格式。
 ```{r ans33}
-# accidents
+`A1事故` <- list(
+                 time   =myd(1-1-2014),
+                 bureaus=list(
+                              板橋分局=list(
+                                           type=c('駕駛人過失-其他') ,
+                                           casualties=c(1)),
+                                           海山分局=list(
+                                            type=c("駕駛人過失-搶越行人穿越道"),
+                                            casualties=c(1))
+)
+)
+str(A1事故)
+#accidents
 ```
 
 
@@ -143,7 +190,8 @@ fiveReceipts <- .randomReceipts(n=5)
 用levels()函數來顯示fiveReceipts有那幾個levels，並把回傳的結果值存在levels_fiveReceipts. 
 
 ```{r ans41}
-# levels_fiveReceipts
+levels_fiveReceipts <- c(5,3,2,1,4)
+levels(levels_fiveReceipts )
 ```
 ### 4.2
 使用as.integer()函數來顯示fiveReceipts在電腦的存法，並把回傳的結果值存在storage_fiveReceipts. 
@@ -177,18 +225,16 @@ source("https://www.dropbox.com/s/xtge2ghfb7dhple/108-2-hw1-4.R?dl=1")
 
 ```{r ans5c, eval=F}
 yy <- 2020
-mm <- `Mar.`
+mm <- "Mar."
 dd <- 15
 event_list <- list(
-  time=ymd(paste0(yy,",",mm,dd)),
-  list(
-    name="小明",
-    `是否完成`=True,
-    完成所花時間(秒)=350,
-    tools=c(
-      "anchor","axe")
+                    time=ymd(paste0(yy,mm,dd)),
+                    list(
+                         name="小明",
+                         `是否完成`= c(T),
+                         `完成所花時間(秒)`=c(350),
+                          tools=c(
+                                         "anchor","axe"))
 )
 ```
-
-
 
