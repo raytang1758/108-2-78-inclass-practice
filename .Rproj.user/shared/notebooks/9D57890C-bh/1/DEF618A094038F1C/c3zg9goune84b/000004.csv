@@ -1,7 +1,7 @@
 "0","listExample <- "
 "0","  list("
 "0","    student=""小明"","
-"0","    `學期`=list("
+"0","    `學期` = list("
 "0","      `108-1`=list("
 "0","        list("
 "0","          name=""個體經濟學"","
@@ -18,7 +18,6 @@
 "0","      )"
 "0","    )"
 "0","  )"
-"0","# 有多少位置可選："
-"0","listExample[[3]]"
-"2","Error in listExample[[3]] : 下標超出邊界
+"0","listExample[c(1,2),max.level=1]"
+"2","Error in listExample[c(1, 2), max.level = 1] : 維度數目不正確
 "
