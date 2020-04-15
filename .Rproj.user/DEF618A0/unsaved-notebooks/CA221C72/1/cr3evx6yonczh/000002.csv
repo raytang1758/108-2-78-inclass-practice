@@ -1,0 +1,7 @@
+"0","fromJSON(""https://www.dropbox.com/s/uday7x99k9q9sxm/course.json?dl=1"", simplifyDataFrame = T) -> course"
+"0","names(course)"
+"1","[1]"
+"1"," ""approve"""
+"1"," ""course"" "
+"1","
+"

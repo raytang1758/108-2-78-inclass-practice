@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586932847167.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "D1B80DDB",
+    "lastKnownWriteTime" : 3020710529320,
+    "last_content_update" : 1586932847167,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "0c7ac88e38124eb880c56d2d14a06137",
+        "name" : "Gamemaster",
+        "title" : "Gamemaster"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}

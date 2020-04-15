@@ -1,0 +1,83 @@
+ALLUSERSPROFILE             C:\ProgramData
+APPDATA                     C:\Users\ray\AppData\Roaming
+CLICOLOR_FORCE              1
+CommonProgramFiles          C:\Program Files\Common Files
+CommonProgramFiles(x86)     C:\Program Files (x86)\Common Files
+CommonProgramW6432          C:\Program Files\Common Files
+COMPUTERNAME                TRAY1758
+ComSpec                     C:\WINDOWS\system32\cmd.exe
+DISPLAY                     :0
+DriverData                  C:\Windows\System32\Drivers\DriverData
+FP_NO_HOST_CHECK            NO
+FPS_BROWSER_APP_PROFILE_STRING
+                            Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING
+                            Default
+GFORTRAN_STDERR_UNIT        -1
+GFORTRAN_STDOUT_UNIT        -1
+HOME                        C:\Users\ray\Documents
+HOMEDRIVE                   C:
+HOMEPATH                    \Users\ray
+LOCALAPPDATA                C:\Users\ray\AppData\Local
+LOGONSERVER                 \\TRAY1758
+MOZ_PLUGIN_PATH             C:\Program Files\Tracker Software\PDF Viewer\Win32\
+MPLENGINE                   tkAgg
+MSYS2_ENV_CONV_EXCL         R_ARCH
+NUMBER_OF_PROCESSORS        4
+OneDrive                    C:\Users\ray\SkyDrive
+OneDriveConsumer            C:\Users\ray\SkyDrive
+OS                          Windows_NT
+PATH                        C:\Program
+                            Files\R\R-3.6.3\bin\x64;C:\ProgramData\Oracle\Java\javapath;C:\Program
+                            Files (x86)\Intel\iCLS Client\;C:\Program
+                            Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA
+                            Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program
+                            Files\Intel\Intel(R) Management Engine
+                            Components\DAL;C:\Program Files\Intel\Intel(R)
+                            Management Engine Components\IPT;C:\Program Files
+                            (x86)\Intel\Intel(R) Management Engine
+                            Components\DAL;C:\Program Files (x86)\Intel\Intel(R)
+                            Management Engine
+                            Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Users\ray\AppData\Local\Microsoft\WindowsApps;C:\Users\ray\AppData\Local\GitHubDesktop\bin
+PATHEXT                     .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE      AMD64
+PROCESSOR_IDENTIFIER        Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
+PROCESSOR_LEVEL             6
+PROCESSOR_REVISION          4501
+ProgramData                 C:\ProgramData
+ProgramFiles                C:\Program Files
+ProgramFiles(x86)           C:\Program Files (x86)
+ProgramW6432                C:\Program Files
+PSModulePath                C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+PUBLIC                      C:\Users\Public
+QT_D3DCREATE_MULTITHREADED
+                            1
+R_ARCH                      /x64
+R_COMPILED_BY               gcc 4.9.3
+R_DOC_DIR                   C:/PROGRA~1/R/R-36~1.3/doc
+R_HOME                      C:/PROGRA~1/R/R-36~1.3
+R_LIBS_USER                 C:/Users/ray/Documents/R/win-library/3.6
+R_USER                      C:/Users/ray/Documents
+RMARKDOWN_MATHJAX_PATH      C:/Program Files/RStudio/resources/mathjax-26
+RS_LOCAL_PEER               \\.\pipe\18609-rsession
+RS_RPOSTBACK_PATH           C:/Program Files/RStudio/bin/rpostback
+RS_SHARED_SECRET            63341846741
+RSTUDIO                     1
+RSTUDIO_CONSOLE_COLOR       256
+RSTUDIO_CONSOLE_WIDTH       80
+RSTUDIO_MSYS_SSH            C:/Program Files/RStudio/bin/msys-ssh-1000-18
+RSTUDIO_PANDOC              C:/Program Files/RStudio/bin/pandoc
+RSTUDIO_SESSION_PORT        18609
+RSTUDIO_USER_IDENTITY       ray
+RSTUDIO_WINUTILS            C:/Program Files/RStudio/bin/winutils
+SESSIONNAME                 Console
+SystemDrive                 C:
+SystemRoot                  C:\WINDOWS
+TEMP                        C:\Users\ray\AppData\Local\Temp
+TERM                        xterm-256color
+TMP                         C:\Users\ray\AppData\Local\Temp
+USERDOMAIN                  TRAY1758
+USERDOMAIN_ROAMINGPROFILE   TRAY1758
+USERNAME                    ray
+USERPROFILE                 C:\Users\ray
+windir                      C:\WINDOWS

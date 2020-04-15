@@ -1,4 +1,0 @@
-"0","fiveReceipts %>% levels()
-"
-"2","Error in fiveReceipts %>% levels() : 沒有這個函數 ""%>%""
-"

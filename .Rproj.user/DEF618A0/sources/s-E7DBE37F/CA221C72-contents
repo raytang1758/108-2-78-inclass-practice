@@ -1,0 +1,45 @@
+---
+title: '0415'
+author: "tr"
+date: "2020/4/15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r data2}
+fromJSON("https://www.dropbox.com/s/uday7x99k9q9sxm/course.json?dl=1", simplifyDataFrame = T) -> course
+names(course)
+```
+
+### 2.1 特定物件取出
+請取出course中time_place的資料儲存到叫做time_place的list物件。
+```{r ans21}
+numVector <- c(2,3,6,-1,4,2,6)
+
+
+```
+
+```{r}
+today <- list(
+  list("台北市",c(highest_temp = 25),c(lowest_temp = 18)),
+  list("新北市",c(highest_temp = 24),c(lowest_temp = 15)))
+tomorrow <- list(
+  list("台北市",c(highest_temp = 25),c(lowest_temp = 18)),
+  list("新北市",c(highest_temp = 24),c(lowest_temp = 15)))
+
+weather <- list(today,tomorrow)
+
+print(weather)
+```
+
+```{r}
+yer <- list(  c(x=2,y=3),c(h=4,j=5))
+str(yer)
+
+```
+

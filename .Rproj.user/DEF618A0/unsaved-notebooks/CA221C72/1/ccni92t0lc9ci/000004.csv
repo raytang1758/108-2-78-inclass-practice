@@ -1,0 +1,5 @@
+"0","numVector <- c(2,3,6,-1,4,2,6)"
+"0",""
+"0","numVector$1"
+"2","錯誤: unexpected numeric constant in ""numVector$1""
+"
