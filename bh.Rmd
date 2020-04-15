@@ -88,4 +88,9 @@ select2 <- select1[[1]]; select2
 # 相當於
 numVector[c(1,4)][[1]]
 ```
+```{r}
+g <- c('r',"r","r","t","t","r")
+g <- factor(g)
+levels(g)
+```
 
