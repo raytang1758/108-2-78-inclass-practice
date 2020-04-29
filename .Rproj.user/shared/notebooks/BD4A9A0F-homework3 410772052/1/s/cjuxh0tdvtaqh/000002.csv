@@ -1,0 +1,9 @@
+"0","mostViolatedArticle <- max(table(badEmployers$law))"
+"0","mostViolatedArticle"
+"1","[1]"
+"1"," 507"
+"1","
+"
+"0","names(mostViolatedArticle)"
+"1","NULL
+"

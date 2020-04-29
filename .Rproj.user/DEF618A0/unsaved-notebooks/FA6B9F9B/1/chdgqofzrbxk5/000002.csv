@@ -1,0 +1,5 @@
+"0","jsonlite::fromJSON(""https://www.dropbox.com/s/3uijub7xheib405/list_victimAges_female.json?dl=1"", simplifyDataFrame = F) -> list_victimAges_female"
+"0","levels(list_victimAges_female$年齡層) -> levels_ages"
+"0","print(levels_ages)"
+"1","NULL
+"
