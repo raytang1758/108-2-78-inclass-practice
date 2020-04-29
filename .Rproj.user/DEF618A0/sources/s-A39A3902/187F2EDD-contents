@@ -67,13 +67,18 @@ time_place
 提示:
 只有type不一樣，其他內容都和course一樣喔!至於approve正確的class是甚麼請查看其內容自行判斷。
 ```{r ans22}
-# course_update
+course$course$type <- "選"
+course$approve <- T
+course_update <- course
+course_update
 ```
 
 ### 2.3 新增特定物件
 系辦決定在修課資料加上授課教師的名字，請在course_update的course資料中新增teacher欄位，授課教師是紀學檜老師，把改完的結果存到course_update2。
 ```{r ans23}
-# course_update2
+course_update$course[["teacher"]] <- "紀學檜"
+course_update2 <- course_update
+str(course_update2)
 ```
 
 ## 3 「應用題」一起成為神奇寶貝大師(或者洛托姆)吧!
@@ -117,7 +122,10 @@ Pikachu
 提示:
 記得class怎麼改嗎?vector內容請按照「atk、def、hp」這樣的順序喔。
 ```{r ans32}
-# Pikachu_stats
+Gamemaster[["pokemon"]][[27]]$baseStats$atk
+Pikachu_stats <- c(atk=112,def=96,hp=111)
+as.integer(Pikachu_stats)
+Pikachu_stats
 ```
 
 ### 3.3 特定物件改寫&特定物件取出

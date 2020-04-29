@@ -1,0 +1,22 @@
+"0","library(lubridate)"
+"2","
+Attaching package: ¡¥lubridate¡¦
+
+"
+"2","The following object is masked from ¡¥package:base¡¦:
+
+    date
+
+"
+"0","list1 <- "
+"0","  list("
+"0","    list("
+"0","      name=""Jack"","
+"0","      birthday=ymd(""1998-03-21""),"
+"0","      status=c(height=177, weight=80)"
+"0","    )"
+"0","'list1'[[1]][[1]] "
+"2","éŒ¯èª¤: unexpected string constant in:
+""    )
+'list1'""
+"

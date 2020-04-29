@@ -67,13 +67,18 @@ time_place
 提示:
 只有type不一樣，其他內容都和course一樣喔!至於approve正確的class是甚麼請查看其內容自行判斷。
 ```{r ans22}
-# course_update
+course$course$type <- "選"
+course$approve <- T
+course_update <- course
+course_update
 ```
 
 ### 2.3 新增特定物件
 系辦決定在修課資料加上授課教師的名字，請在course_update的course資料中新增teacher欄位，授課教師是紀學檜老師，把改完的結果存到course_update2。
 ```{r ans23}
-# course_update2
+course_update$course[["teacher"]] <- "紀學檜"
+course_update2 <- course_update
+str(course_update2)
 ```
 
 ## 3 「應用題」一起成為神奇寶貝大師(或者洛托姆)吧!
@@ -82,6 +87,7 @@ time_place
 請先執行此chunk讀入神奇寶貝資料(Gamemaster)並觀察該資料
 ```{r data3}
 fromJSON("https://www.dropbox.com/s/3of3hxzt86oyci8/Gamemaster.json?dl=1", simplifyDataFrame = F) -> Gamemaster
+str(Gamemaster,max.level = 1)
 ```
 
 ### 3.1 特定物件取出
@@ -108,7 +114,7 @@ List of 9
 ```
 ```{r ans31}
 Pikachu <- Gamemaster[["pokemon"]][[27]]
-Pikachu
+str(Pikachu)
 ```
 
 ### 3.2 特定物件取出&class調整
@@ -117,7 +123,12 @@ Pikachu
 提示:
 記得class怎麼改嗎?vector內容請按照「atk、def、hp」這樣的順序喔。
 ```{r ans32}
-# Pikachu_stats
+atk <- Gamemaster[["pokemon"]][[27]]$baseStats$atk
+def <- Gamemaster[["pokemon"]][[27]]$baseStats$def
+hp <-  Gamemaster[["pokemon"]][[27]]$baseStats$hp
+Pikachu_stats <- c(atk,def,hp)
+as.integer(Pikachu_stats)
+Pikachu_stats
 ```
 
 ### 3.3 特定物件改寫&特定物件取出
@@ -125,7 +136,9 @@ Pikachu
 最後跟3.1一樣，將胖丁的相關資料並存在叫做Jigglypuff的list物件。
 
 ```{r ans33}
-# Jigglypuff
+Gamemaster$pokemon[[46]]$speciesName <- "Jigglypuff"
+Jigglypuff <- Gamemaster[["pokemon"]][[46]]
+Jigglypuff
 ```
 
 ### 3.4 魔王題——考驗自己有沒有成為程式設計大師/洛托姆的時候到了
@@ -144,7 +157,22 @@ Pikachu
 提示:
 注意Mimikyu的各種資料格式都應該要跟Pikachu、Jigglypuff他們一樣喔。
 ```{r ans34}
-# Gamemaster
+Gamemaster$pokemon[[778]] <- list(
+   `dex`=c(778),
+   `speciesName`=c("Mimikyu"),
+   `peciesId`=c("mimikyu"),
+   `basestate`=list(atk=112,def=96,hp=111),
+   `chargedMove`=c("BODY_SLAM","DAZZLING_GLEAM","DISARMING_VOICE","GYRO_BALL","PLAY_ROUGH"),
+   `type`=c("ghost","fairy"),
+   `fastmove`=c("FEINT_ATTACK","POUND"),
+   `legacyMoves`=c("BODY_SLAM","PLAY_ROUGH"),
+    `defaultIVs`=list(
+                       `cp1500`=c(40,15,15,15),
+                       `cp2500`=c(40,15,15,15)
+   )
+
+)
+str(Gamemaster$pokemon[[778]],max.level = 2)
 ```
 
 # 恭喜你寫完了!最後記得回去檢查注意事項有沒有都做到，避免被白扣分喔~

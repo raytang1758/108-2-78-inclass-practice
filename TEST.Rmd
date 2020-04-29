@@ -1,0 +1,79 @@
+---
+title: "test"
+author: "tr"
+date: "2020/4/17"
+output: html_document
+---
+#time
+```{r}
+library(lubridate)
+```
+```{r}
+tw <- c("2012/12/30 12:12:12")
+ymd_hms(tw,tz="Asia/Taipei")
+ymd_hms(tw,tz="Asia/Taipei") -> h
+with_tz(h, tzone = "America/Chicago")
+#https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+```
+
+
+#factor
+```{r}
+levels(fiveReceipts) -> levels_fiveReceipts
+as.integer(levels_fiveReceipts)-> storage_fiveReceipts
+as.character(levels_fiveReceipts)-> chr_fiveReceipts
+sum(as.integer(as.character(levels_fiveReceipts)))
+
+majors10_factor <- factor(
+  c('經濟學系','社會學系','社會學系','經濟學系','經濟學系','社會學系','經濟學系','經濟學系','經濟學系','社會學系'))
+majors10_factor
+class(majors10_factor)
+```
+#numeratic 整數,integer 數字,character 文字
+
+#取物
+```{r}
+pi <- c(3,1,4,1,5,9,2,6,5,3,5)
+gift <- pi[[8]]
+#連續
+atk <- Gamemaster[["pokemon"]][[27]]$baseStats$atk
+#一取二
+Gamemaster[["pokemon"]][c(27,28)]
+```
+#change
+```{r}
+#替換值
+pi <- c(3,1,4,1,5,9,2,6,5,3,5)
+pi[[8]] <- 6
+pi[c(1,2,3)] <- c(2,2,2)
+#新增欄位名稱
+course_update2$course$teacher <- "紀學檜"
+course_update$course[["teacher"]] <- "紀學檜"
+#list替換
+Gamemaster$pokemon[[778]] <- list(
+   `dex`=c(778),
+   `speciesName`=c("Mimikyu"),
+   `peciesId`=c("mimikyu"),
+   `basestate`=list(atk=112,def=96,hp=111),
+   `chargedMove`=c("BODY_SLAM","DAZZLING_GLEAM","DISARMING_VOICE","GYRO_BALL","PLAY_ROUGH")
+```
+#刪除
+```{r}
+#直接刪除不須回存
+list1[[2]][c(1,2)] <- NULL
+#需回存
+pi <- c(3,1,4,1,5,9,2,6,5,3,5)
+pi[c(-3,-1)] -> pi
+pi[-c(3,1)] -> pi
+```
+
+```{r}
+majors10_factor <- factor(
+  c('經濟學系','社會學系','社會學系','經濟學系','經濟學系','社會學系','經濟學系','經濟學系','經濟學系','社會學系')
+)
+str(majors10_factor)
+levels(majors10_factor)
+
+```
+
+
