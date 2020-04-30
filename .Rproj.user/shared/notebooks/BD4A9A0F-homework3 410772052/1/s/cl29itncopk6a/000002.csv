@@ -1,0 +1,7 @@
+"0","a <- stringr::str_detect(students10$志願,""北大"")"
+"0","ntpu_namelist <- students10$姓名[a]"
+"0","class(ntpu_namelist)"
+"1","[1]"
+"1"," ""character"""
+"1","
+"
