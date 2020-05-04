@@ -129,14 +129,18 @@ ntpu_namelist
 志願沒有填北大經濟的人可以進一階篩選嗎?
 logical儲存的本質是甚麼?
 ```{r ans23}
+
 a <- stringr::str_detect(students10$志願,"北大經濟")
-b <- students10$國文[a] >= 12
-c <- students10$英文[a]
-d <- students10$數學[b]
-students10$數學[d]
+fp <- students10$姓名[a]
+s <- as.integer(students10$姓名[a])
+str(s)
+b <- s >= 12
+
 # ntpu_econtpu_eco
 ```
-
+c <- students10$英文
+d <- students10$數學
+students10$數學[d]
 ### 2.4 %in%
 終於放榜了!
 請幫3年1班志願填北大經濟的同學看看他們有沒有上榜，並幫上榜同學列印榜單，以下為榜單模板:
