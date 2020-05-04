@@ -132,10 +132,10 @@ logical儲存的本質是甚麼?
 
 a <- stringr::str_detect(students10$志願,"北大經濟")
 fp <- students10$姓名[a]
-s <- as.integer(students10$姓名[a])
-str(s)
-b <- s >= 12
-
+b <- stringr::str_detect(students10$志願,fp)
+sp <- students10$姓名[b]
+sp
+str(b)
 # ntpu_econtpu_eco
 ```
 c <- students10$英文
