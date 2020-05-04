@@ -2,19 +2,19 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1588172930500.000,
-    "dirty" : false,
+    "dirty" : true,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1223067047",
+    "hash" : "0",
     "id" : "4AAA76FC",
     "lastKnownWriteTime" : 1588227754,
-    "last_content_update" : 1588227754445,
+    "last_content_update" : 1588555325280,
     "path" : "C:/Users/ray/Desktop/homework3 410772052.Rmd",
     "project_path" : null,
     "properties" : {
-        "cursorPosition" : "132,26",
-        "last_setup_crc32" : "BB1C60339a306f2",
-        "scrollLine" : "116"
+        "cursorPosition" : "133,21",
+        "last_setup_crc32" : "F02079AE39a306f2",
+        "scrollLine" : "117"
     },
     "read_only" : false,
     "read_only_alternatives" : [

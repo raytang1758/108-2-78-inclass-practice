@@ -130,10 +130,10 @@ ntpu_namelist
 logical儲存的本質是甚麼?
 ```{r ans23}
 a <- stringr::str_detect(students10$志願,"北大經濟")
-b <- students10$國文[a] >= 12,students10$姓名[a]
+b <- students10$國文[a] >= 12
 c <- students10$英文[a]
 d <- students10$數學[b]
-
+students10$數學[d]
 # ntpu_econtpu_eco
 ```
 
