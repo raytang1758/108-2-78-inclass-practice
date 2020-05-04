@@ -1,4 +1,0 @@
-"0","a <- stringr::str_detect(students10$志願,""北大經濟"")"
-"0","b <- students10$國文[a] >= 12,students10$姓名[a]"
-"2","錯誤: 未預期的 ',' in ""b <- students10$國文[a] >= 12,""
-"

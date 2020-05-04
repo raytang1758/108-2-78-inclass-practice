@@ -104,9 +104,16 @@ source("https://www.dropbox.com/s/5oy56om4q0857tt/student10.R?dl=1",encoding = "
 小知識:
 factor是從1開始的整數，沒有0喔。
 ```{r ans21}
-table$國文
-table
-# chinese
+s <- table$級分
+as.factor(s)
+s
+sss  <- ss+1
+a <- sss
+b = table$國文
+h <- list(w=a,e=b)
+str(h)
+chinese <- h[c(w,e)]
+chinese
 ```
 
 ### 2.2 str_detect()
