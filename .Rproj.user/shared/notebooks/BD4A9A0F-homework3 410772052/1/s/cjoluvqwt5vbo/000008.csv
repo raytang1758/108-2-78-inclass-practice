@@ -1,0 +1,4 @@
+"0","read_csv(""https://www.dropbox.com/s/xjzg1iuuws7tcha/table.csv?dl=1"") -> table"
+"2","Error in open.connection(con, ""rb"") : 
+  Could not resolve host: www.dropbox.com
+"

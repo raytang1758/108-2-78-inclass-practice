@@ -105,15 +105,8 @@ source("https://www.dropbox.com/s/5oy56om4q0857tt/student10.R?dl=1",encoding = "
 factor是從1開始的整數，沒有0喔。
 ```{r ans21}
 s <- table$級分
-as.factor(s)
-s
-sss  <- ss+1
-a <- sss
-b = table$國文
-h <- list(w=a,e=b)
-str(h)
-chinese <- h[c(w,e)]
-chinese
+factor(b)
+factor(b, levels = ss)
 ```
 
 ### 2.2 str_detect()
@@ -139,7 +132,7 @@ logical儲存的本質是甚麼?
 
 a <- stringr::str_detect(students10$志願,"北大經濟")
 fp <- students10$姓名[a]
-b <- stringr::str_detect(students10$志願,fp)
+c <- students10$國文[fp] <= 12
 sp <- students10$姓名[b]
 sp
 str(b)
