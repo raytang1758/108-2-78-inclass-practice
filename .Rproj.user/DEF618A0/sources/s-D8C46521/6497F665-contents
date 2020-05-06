@@ -68,7 +68,7 @@ str_detect(studentIds, "107|108")
 ```{r}
 Ids <- c("A283743192","ACnnn829103720","A10920402","C291022384")
 
-str_view_all(Ids, "[AC]")
+str_view_all(Ids, A)
 str_detect(Ids, "[AC]") # 偵測 出現A、C
 
 str_extract(Ids,"[A-Z]") # 取出 A-Z的字元
@@ -88,5 +88,110 @@ str_detect(
   c(claimA,claimB,claimC),
   pattern=myRegexSlotMachine
 )
+```
+```{r}
+headline <- "資科系的謝陳官乃飛鳶書院三大名師，其中謝無雙官求敗的策略運算，陳大器的數理資科學，及的運算成本更是打通演算思維任督二脈的三大好課。書院目前有陳一、陳二、陳三四這三名學生。"
+```
+```{r}
+# 顯示所有符合規則的
+str_view_all(headline, "(謝陳官)") # 固定字組
+str_count(headline,"謝陳官")
+
+str_view_all(headline, "[謝陳官]") # 有1個strip: 出象有3個可能字元 
+str_count(headline, "[謝陳官]")
+
+str_view_all(headline, "(謝無雙|官求敗)") # 有1個strip，出象有2個字組 
+str_count(headline, "謝無雙&官求敗")
+
+str_view_all(headline, "陳[^官]") # 固定字元＋有1個strip： 出象為排官的字元
+str_count(headline, "陳[^官]")
+```
+
+```{r}
+addresses <- c(
+  '臺中市后里區公館里尾社路385號',
+  '新竹市東區科學園路125號1樓'
+  )
+```
+```{r}
+a <- b <- c <- "[1-9]"
+d <- "號"
+paste0(a,b,c,d) -> g
+g
+str_view_all(addresses,g)
+```
+```{r}
+strip1 <- strip2 <- strip3 <- "[0-9]"
+strip4 <- "號"
+myRegexSlotMachine <- paste0(strip1,strip2,strip3,strip4)
+print(myRegexSlotMachine)
+str_extract(addresses,myRegexSlotMachine)
+```
+```{r}
+addresses <- c(
+  '臺中市后里區公館里尾社路385號',
+  '新竹市東區科學園路125號1樓',
+  '新竹市北區竹光路99號',
+  '金門縣金城鎮賢庵里山前33號',
+  '臺中市南屯區工業區二十四路23號1樓')
+```
+```{r}
+myRegexSlotMachine <- "[0-9]+號"
+print(myRegexSlotMachine)
+str_view_all(addresses,myRegexSlotMachine)
+str_extract(addresses,myRegexSlotMachine)
+
+str_view_all(addresses,"[0-9]+") # 樓號也會選到
+```
+```{r}
+phrase <- c("唧唧复唧唧")
+```
+
+```{r}
+# 目標是後面的唧唧
+target_regex2 <- "唧唧"
+pattern <- glue::glue("{target_regex2}$")
+print(pattern)
+str_view(phrase, pattern) 
+```
+```{r}
+twDate <-  c("民國108年12月5日","民國98年10月5日")
+
+library(stringr)
+# 準備regex: 
+## 取出：「前有」民國，「後有」年的「數字」「們」
+## "(?<={A_regex}){target_regex}(?={B_regex})"
+
+target_regex <- "[0-9]+"
+A_regex <- "民國"
+B_regex <- "年"
+
+regex_pattern <- glue::glue(
+  "(?<={A_regex}){target_regex}(?={B_regex})"
+  )
+
+print(regex_pattern)
+
+## 如果同學已經很熟就可以直接寫
+regex_pattern <-
+  "(?<=民國)[0-9]+(?=年)"
+
+# 取出民國年，計算西元年
+year <- 
+  str_extract(
+    twDate,
+    regex_pattern)
+westernYear <- as.integer(year)+1911
+
+# 替換民國xx年的xx成西元年數字
+str_replace(
+  twDate,
+  regex_pattern,  # 要換掉的文字
+  as.character(westernYear) # 要替換的內容
+) -> twDate_reformat
+print(twDate_reformat)
+
+
+lubridate::ymd(twDate_reformat)
 ```
 
