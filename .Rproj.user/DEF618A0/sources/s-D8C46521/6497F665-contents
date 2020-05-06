@@ -5,24 +5,6 @@ date: "2020/5/6"
 output: html_document
 ---
 ```{r}
-example <- list(
-  name=c("小明","小花","小新","美美"),
-  height=c(175,166,170,160),
-  weight=c(77,NA,60,43),
-  birthday=lubridate::ymd(c("1998-03-11","1999-12-22","1995-08-22","2001-10-10")),
-  hobby=c("美食 旅遊","旅遊 時尚","3C 美食","音樂 旅遊"),
-  residence=c("Taipei","New Taipei","Taichung","Kaohsiung"),
-  allowance=factor(c("0-1000","1001-2000","2000+","1001-2000")),
-  bloodType=c("A","B","B","O")
-)
-```
-
-```{r}
-library(stringr)
-library(glue)
-```
-
-```{r}
 
 str_sub("410873002", 5, 6)
 ```
@@ -30,6 +12,81 @@ str_sub("410873002", 5, 6)
 ```{r}
 lubridate::ymd(
   c("民國108年12月5日","民國98年10月5日")
+)
+```
+```{r}
+lubridate::ymd(
+  c(
+    "民國2019年12月05日",
+    "馬丁2019的12課05muydifícil",
+    "助教2019Emily12解說05真棒",
+    "2019R12課程05すごい",
+    "R程式2019的12期中考05とても変態"
+  )
+)
+```
+```{r}
+str_extract_all(
+  c("民國108年12月5日","民國98年10月5日"),
+  "(?<=民國)[0-9]{2,3}(?=年)"
+) # 回傳list 
+
+str_extract(
+  c("民國108年12月5日","民國98年10月5日"),
+  "(?<=民國)[0-9]{2,3}(?=年)"
+) # 回傳vector 
+```
+```{r}
+heartSutra <- c("舍利子，色不異空，空不異色；色即是空，空即是色。")
+str_view_all(heartSutra,"色不") # 檢視
+str_count(heartSutra,"色") # 計數
+```
+
+```{r}
+studentIds <- c("410871029","410773005","410772035","410562123")
+# 取出學號中的入學屆為107或108
+str_view_all(studentIds,"[1234]")
+```
+
+
+```{r}
+strip1 <- "[0-9]"
+strip2 <- "(櫻桃|777|紅心)" # 字群組合strip因為等下放中間所以用()括起來
+strip3 <- "[A-Z]"
+myRegexSlotMachine <- paste0(strip1,strip2,strip3)
+print(myRegexSlotMachine)
+```
+
+
+```{r}
+str_view_all(studentIds, "(107|108)") # 可不寫()
+
+# 是否來自107或108學屆
+str_detect(studentIds, "107|108")
+```
+
+```{r}
+Ids <- c("A283743192","ACnnn829103720","A10920402","C291022384")
+
+str_view_all(Ids, "[AC]")
+str_detect(Ids, "[AC]") # 偵測 出現A、C
+
+str_extract(Ids,"[A-Z]") # 取出 A-Z的字元
+```
+
+```{r}
+claimA <- "我得到A檸檬99"
+claimB <- "我的是7777Z"
+claimC <- "我玩了兩次，一次是7蘋果H，另一次是5紅心J"
+# 顯示吻合的出象
+str_view(
+  c(claimA,claimB,claimC),
+  pattern=myRegexSlotMachine
+)
+# 是否有吻合的出象
+str_detect(
+  c(claimA,claimB,claimC),
+  pattern=myRegexSlotMachine
 )
 ```
 
