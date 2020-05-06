@@ -1,8 +1,0 @@
-"0","hh <- table(badEmployers$lawContent) == max(table(badEmployers$lawContent))"
-"0","mostViolatedArticle_content <- table(badEmployers$lawContent)[hh]"
-"0","mostViolatedArticle_content <- names(mostViolatedArticle_content)"
-"0","mostViolatedArticle_content"
-"1","[1]"
-"1"," ""延長工作時間超過法令規定"""
-"1","
-"
