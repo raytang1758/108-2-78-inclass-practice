@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589388048223.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C88423E4",
+    "lastKnownWriteTime" : 1713933443168,
+    "last_content_update" : 1589388048223,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "A598EBBF",
+        "caption" : "garbageRoutes",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=garbageRoutes&cache_key=A598EBBF",
+        "displayedObservations" : "2000",
+        "environment" : "",
+        "expression" : "garbageRoutes",
+        "object" : "garbageRoutes",
+        "preview" : "0",
+        "totalObservations" : "2000",
+        "variables" : "31"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

@@ -1,0 +1,9 @@
+"0","a <- ""[A-Z]路線|[A-Z][0-9]+路線|[金山][0-9]路線""
+str_extract(garbageRoutes$linename,a) -> b
+b <- factor(b)
+levels(b) -> c
+garbageRoutes[[route]] <- names(c)
+"
+"2","Error in `[[<-.data.frame`(`*tmp*`, route, value = NULL) : 
+  找不到物件 'route'
+"

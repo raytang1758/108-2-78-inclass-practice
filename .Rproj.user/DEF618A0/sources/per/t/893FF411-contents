@@ -37,13 +37,14 @@ str_extract_all(twoNames, "段(兄|兄弟)")
 請在小明的target regex後面加上「後面鄰居不能有弟」的regex描述並存在back_regex (class character) 裡. (hint: 查cheat sheet look around)
 ```{r ans1}
 back_regex <- "段兄(?!弟)"
-#back_regex <- "段兄[^弟]"
+ 
+
 back_regex
 ```
 若你的答案正確，執行以下程式會得到一個段兄，一個段兄弟。
 ```{r}
-pattern <- paste0("段(兄|兄弟)",back_regex )
-pattern
+pattern <- paste0("段(兄|兄弟)",back_regex)
+str_extract_all(twoNames, pattern)
 ```
 
 ## 2. 天龍八部

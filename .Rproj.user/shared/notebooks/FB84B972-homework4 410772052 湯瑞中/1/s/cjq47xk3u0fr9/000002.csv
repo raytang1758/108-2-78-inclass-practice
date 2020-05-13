@@ -1,0 +1,4 @@
+"0","mention_duan <- str_extract_all(context_picked_split,""段譽|段兄|段兄弟|段大哥|段相公|段君|及姓段的小子"")"
+"2","Error in stri_extract_all_regex(string, pattern, simplify = simplify,  : 
+  找不到物件 'context_picked_split'
+"
