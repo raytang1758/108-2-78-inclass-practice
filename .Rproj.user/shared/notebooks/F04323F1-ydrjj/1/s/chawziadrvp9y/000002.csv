@@ -1,0 +1,5 @@
+"0","map(
+  map(weather_next36hours$cwbopendata$dataset$location$weatherElement,~.x$time),~.x[[1]])
+"
+"1","[[1]]
+"
