@@ -1,0 +1,1 @@
+{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"table(unlist(mention_duan))","line_number":0},{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"unlist(mention_duan)","line_number":0}],"message":"Error in unlist(mention_duan) : 找不到物件 'mention_duan'\n"}

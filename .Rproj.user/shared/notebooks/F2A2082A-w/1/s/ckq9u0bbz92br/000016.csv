@@ -1,0 +1,8 @@
+"0","a <- list(
+   c = c(""a""),
+   s = c(""wwwww"")
+)
+as.factor(a)
+"
+"2","Error in order(y) : 類型 'list' 尚未在 'orderVector1' 中實作
+"
