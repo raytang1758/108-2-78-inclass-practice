@@ -1,0 +1,8 @@
+"0","levels(region) %>% 
+  str_replace(.,""台北"",""北部"") %>%
+  str_replace(.,""花蓮|台東"",""東部"") %>%
+  str_replace(.,""台中"",""中部"") %>%
+  levels(.)
+"
+"1","NULL
+"

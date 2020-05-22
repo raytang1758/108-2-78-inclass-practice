@@ -1,0 +1,4 @@
+"0","population %>%"
+"0","  sort(.) %>%"
+"0","  names(.) %>%"
+"0","  factor(cities, levels=.) -> cities"

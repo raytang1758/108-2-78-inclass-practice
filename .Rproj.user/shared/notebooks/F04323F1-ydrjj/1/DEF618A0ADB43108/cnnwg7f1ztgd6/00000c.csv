@@ -1,0 +1,6 @@
+"0","threeHeights %>%"
+"0","  .sort(., decreasing=T) %>%"
+"0","  names(.) %>%"
+"0","  .[[1]] -> highestPerson"
+"2","Error in eval(lhs, parent, parent) : 找不到物件 'threeHeights'
+"

@@ -1,0 +1,9 @@
+"0","# 資料"
+"0","population <- c(`cityA`=500,`cityB`=1500, `cityC`=399)"
+"0","cities <- c(""cityA"",""cityA"",""cityB"",""cityB"",""cityC"")"
+"0",""
+"0","population %>% "
+"0","  names(sort(.)) %>%"
+"0","  factor(cities, levels=.) -> cities"
+"2","Error in names(., sort(.)) : 傳遞了 2 個引數給 'names' 但它需要 1 個
+"
