@@ -1,3 +1,0 @@
-"0","table(unlist(mention_duan)) -> table_duan"
-"2","Error in unlist(mention_duan) : 找不到物件 'mention_duan'
-"

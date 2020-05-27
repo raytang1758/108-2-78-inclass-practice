@@ -1,0 +1,5 @@
+"0","data228[c(""全宗名編號"",""年"")] <- c(tex,year)
+"
+"2","Error in `[<-.data.frame`(`*tmp*`, c(""全宗名編號"", ""年""), value = c(""A202000000A"",  : 
+  replacement has 50 items, need 180904
+"

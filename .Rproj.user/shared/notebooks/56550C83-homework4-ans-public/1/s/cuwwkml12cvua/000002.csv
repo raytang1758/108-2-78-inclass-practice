@@ -1,5 +1,0 @@
-"0","pattern <- ""姓?段(譽|兄|兄弟|大哥|公子|相公|君|的小子)(?!弟)"""
-"0","str_extract_all(context_picked_split[[1]], pattern = pattern) -> mention_duan"
-"2","Error in stri_extract_all_regex(string, pattern, simplify = simplify,  : 
-  找不到物件 'context_picked_split'
-"
