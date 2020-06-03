@@ -1,0 +1,8 @@
+"0","rout <- 886"
+"0","arrive <- function(route,loc)"
+"0","{"
+"0","  busRoutes$nameZh==""route"" -> route2"
+"0","  busStopsInfo$nameZh==""loc"" -> loc2"
+"0","  names(route2) -> nr"
+"0","  "
+"0","}"

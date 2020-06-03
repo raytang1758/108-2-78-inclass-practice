@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1591199227302.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A932938E",
+    "lastKnownWriteTime" : 8249293109503593056,
+    "last_content_update" : 1591199227303,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "D9828BEF",
+        "caption" : "busArrivalForecast",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=busArrivalForecast&cache_key=D9828BEF",
+        "displayedObservations" : 30,
+        "environment" : "",
+        "expression" : "busArrivalForecast",
+        "object" : "busArrivalForecast",
+        "preview" : 0,
+        "totalObservations" : 30,
+        "variables" : 4
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

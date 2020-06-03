@@ -1,0 +1,4 @@
+"0","map(split_docCode,~ .x[[2]]) -> list_xx"
+"0","unlist(list_xx) -> xx"
+"0","data228$年 <- "
+"0","  as.integer(xx)"

@@ -1,0 +1,4 @@
+"0","map(split_docCode,~ .x[[1]]) -> list_docNumbers"
+"0","unlist(list_docNumbers) -> docNumbers"
+"0","data228$全宗名編號 <- "
+"0","  factor(docNumbers)"

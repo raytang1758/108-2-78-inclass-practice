@@ -1,0 +1,4 @@
+"0","regex <- ""[:graph:]+系([:graph:]+)?|[:graph:]+法律學系[:graph:]+組[:graph:]+"""
+"0","courseStructure$應修系級 -> s1"
+"2","錯誤: 找不到物件 'courseStructure'
+"

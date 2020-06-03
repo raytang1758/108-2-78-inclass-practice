@@ -1,0 +1,4 @@
+"0","jsonlite::from7z(""https://data.taipei/api/getDatasetInfo/downloadResource?id=7996eec3-e88a-4abc-b602-42c81932a9f6&rid=a838c175-47e3-483e-bc9e-cd700d229696"") -> rout1
+"
+"2","錯誤: 'from7z' is not an exported object from 'namespace:jsonlite'
+"
