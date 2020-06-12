@@ -1,0 +1,8 @@
+"0","if(!require(lubridate)){ # condition: 是否「沒安裝lubridate」？"
+"0","  install.packages(""lubridate"")"
+"0","}"
+"0","lubridate::ymd_hms(""2020-07-01 13:00:00 GMT"")"
+"1","[1]"
+"1"," ""2020-07-01 13:00:00 UTC"""
+"1","
+"

@@ -1,0 +1,6 @@
+"0","if(condition){"
+"0","  body for TRUE condition"
+"2","錯誤: 未預期的 'for' in:
+""if(condition){
+  body for""
+"

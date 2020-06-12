@@ -1,0 +1,4 @@
+"0","check_package <- if(!require(""pack""){install.packages(""pack"")}
+"
+"2","錯誤: 未預期的 '{' in ""check_package <- if(!require(""pack""){""
+"
