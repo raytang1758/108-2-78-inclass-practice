@@ -81,12 +81,19 @@ m2 -> `1st_odd_or_even`
 請寫一個叫做odd_or_even的function，它的功能是在你輸入身分證字號後能自動回傳其末碼屬於單數還是雙數(單雙數表示法同2.1)，比如輸入
 odd_or_even(Mask$身分證字號[[1]])，執行結果應該出現和你2.1計算出來的一樣。
 ```{r ans22}
-regex <- "[:graph:][0-9]+"
+regex1 <- "[0-9]$"
 odd_or_even <- function(id){
-  if()
-  
+  d1 <- str_extract(id,regex1)
+  d2 <- as.integer(d1)
+  if(as.logical(d2 %% 2)){
+    m3 <- 0
+  }else{
+    m3 <- 1 
+  }
+  return(m3)
 }
-#odd_or_even
+odd_or_even(Mask$身分證字號[[1]])
+odd_or_even
 ```
 
 ### 2.3 口罩實名制1.0—購買口罩日期
@@ -110,6 +117,8 @@ chart[[odd_or_even(Mask$身分證字號[[1]])+1]]
 ```
 這題非常有挑戰性喔!
 ```{r ans23}
+
+
 # 1st_next_date
 ```
 
@@ -119,6 +128,13 @@ chart[[odd_or_even(Mask$身分證字號[[1]])+1]]
 
 也可以輸入自己或家人朋友的身分證字號玩看看，如果都沒問題的話你就已經能寫出一個時下流行的口罩小app了呢!
 ```{r ans24}
+next_date <- function(id){
+  
+
+  
+  
+
+}
 # next_date
 ```
 

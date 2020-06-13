@@ -12,16 +12,16 @@
     "path" : null,
     "project_path" : null,
     "properties" : {
-        "cacheKey" : "9405842F",
+        "cacheKey" : "3BB66722",
         "caption" : "Mask",
-        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=Mask&cache_key=9405842F",
-        "displayedObservations" : 10,
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=Mask&cache_key=3BB66722",
+        "displayedObservations" : "10",
         "environment" : "",
         "expression" : "Mask",
         "object" : "Mask",
-        "preview" : 0,
-        "totalObservations" : 10,
-        "variables" : 1
+        "preview" : "0",
+        "totalObservations" : "10",
+        "variables" : "1"
     },
     "read_only" : false,
     "read_only_alternatives" : [
