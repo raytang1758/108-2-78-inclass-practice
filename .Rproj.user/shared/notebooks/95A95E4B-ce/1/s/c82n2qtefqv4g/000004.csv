@@ -1,0 +1,9 @@
+"0","Sys.setenv(""_R_CHECK_LENGTH_1_CONDITION_"" = ""true"")"
+"0","myAnswer <- c(2,3,6)"
+"0","correctAnswer <- c(2,3,5)"
+"0",""
+"0","if(myAnswer == correctAnswer){ # 只取用第一個T/F"
+"0","  print(""你答對了"")"
+"0","}"
+"2","Error in if (myAnswer == correctAnswer) { : the condition has length > 1
+"

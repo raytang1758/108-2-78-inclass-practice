@@ -1,0 +1,8 @@
+"0","switch(實現的conditionExpression,"
+"0","       ""conditionExpression1""= {    },"
+"0","       ""conditionExpression2""= {    },"
+"0","       :"
+"2","錯誤: 未預期的 ':' in:
+""       ""conditionExpression2""= {    },
+       :""
+"

@@ -1,0 +1,16 @@
+"0","miniFun <- function(){"
+"0","  lubridate::now()"
+"0","}"
+"0","miniFun"
+"1","function(){
+"
+"1","  lubridate::now()
+"
+"1","}
+"
+"0","miniFun2 <- function() lubridate::now()"
+"0","miniFun2()"
+"1","[1]"
+"1"," ""2020-06-17 15:39:00 CST"""
+"1","
+"

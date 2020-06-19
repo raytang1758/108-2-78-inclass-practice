@@ -1,0 +1,3 @@
+"0","cut(x, c(a,b,c))"
+"2","Error in cut.default(x, c(a, b, c)) : 找不到物件 'a'
+"
