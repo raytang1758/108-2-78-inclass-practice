@@ -1,0 +1,1 @@
+{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"vector(\"{type}\", length = {\n    len\n})","line_number":0}],"message":"Error in vector(\"{type}\", length = { : 找不到物件 'len'\n"}

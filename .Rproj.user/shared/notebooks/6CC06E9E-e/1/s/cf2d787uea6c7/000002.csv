@@ -1,0 +1,8 @@
+"0","count <- 0 # 計數器起始值"
+"0","sum <- 0"
+"0","while(count <= 10){ # 計數上限條件"
+"0","  count <- count+1 # 計數器+1"
+"0","  sum <- sum+a[[count]]"
+"0","}"
+"2","Error in sum + a[[count]] : 二元運算子中有非數值引數
+"
